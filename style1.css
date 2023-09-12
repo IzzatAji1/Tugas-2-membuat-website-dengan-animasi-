@@ -1,0 +1,85 @@
+*{
+    font-family :Arial, Helvetica, sans-serif;
+    padding-right : 10px;
+}
+
+body {
+    position : relative;
+    background-color : rgb(238, 238, 238);
+    z-index: 1;
+}
+
+header{
+    position : relative;
+    z-index: 2;
+    font-size : 25px;
+    background-color: black;
+    box-sizing: border-box;
+    width : 100%;
+    padding : 5px;
+    padding-left : 20px;
+}
+
+a:link, a:visited {
+    background-color: #525252;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  a:hover, a:active {
+    background-color:#b7b7b7;
+    transform: scale(1.2);
+  }
+
+  table.req1 {
+    text-align: left;
+    padding-top : 80px;
+    padding-left : 50px;
+    padding-right : 500px;
+  }
+
+  table.req {
+    position : relative;
+    z-index: 3;
+    background-color: gray;
+  }
+
+  h2, p{
+    padding-left : 20px;
+  }
+
+  .animasi {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; transform : rotate(0deg); left : 0px; top : 0px;}
+    12%   {background-color:yellow;}
+    25% {background-color:blue; transform : rotate(360deg); left : 100px; top : 0px;}
+    37%   {background-color:red;}
+    50% {background-color:yellow; transform : rotate(0deg); left : 100px; top : 100px;}
+    62%   {background-color:blue;}
+    75% {background-color:red; transform : rotate(360deg); left : 0px; top : 100px;}
+    87%   {background-color:yellow;}
+    100% {background-color:red; transform : rotate(0deg); left : 0px; top : 0px;}
+  }
+
+  footer {
+    text-align: left;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    height : 150px;
+    
+}
